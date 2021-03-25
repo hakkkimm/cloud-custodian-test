@@ -3,3 +3,5 @@ policies:
     resource: aws.ec2
     filters:
       - "tag:Custodian": present
+    actions:
+      - stop
