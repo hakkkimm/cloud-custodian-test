@@ -2,6 +2,6 @@ policies:
   - name: my-first-policy
     resource: aws.ec2
     filters:
-      - "InstanceType:t2.micro": present
+      - InstanceType: t2.micro
     actions:
-      - stop
+      - terminate
